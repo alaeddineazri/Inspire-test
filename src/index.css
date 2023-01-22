@@ -1,0 +1,22 @@
+/* step one  add fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  background: #f1f1f1;
+  height: 100%;
+}
