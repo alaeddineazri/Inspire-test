@@ -7,18 +7,13 @@ import { getAllCandidates } from "../../redux/action/CandidatsAction";
 
 const CandidateCard = () => {
 
-  const Candidats = useSelector(state => state.Candidats)
-  
-  const Candidatures = Candidats.Candidatures
-  const NouveauxProfils = Candidats.NouveauxProfils
-  const DossiersIntéressants = Candidats.DossiersIntéressants
-  const DossiersFavoris = Candidats.DossiersFavoris
+
+
+  const { Candidatures, NouveauxProfils, DossiersIntéressants, DossiersFavoris } = useSelector(state => state.Candidats);
 
 
     const dispatch = useDispatch()
 
-      console.log(Candidatures)
-      console.log(NouveauxProfils.label)
 
     useEffect(() => {
       dispatch(getAllCandidates())
